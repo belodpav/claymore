@@ -339,3 +339,50 @@ footer {
     margin: 0 auto;
     top: -40px;
 }
+/* Slider */
+.slider {
+    position: relative;
+}
+.slider-box {
+    position: relative;
+    z-index: 1000;
+    width: 452px;
+    height: 284px;
+    display: block;
+    
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.slider-item {
+    display: none;
+    width: 100%;
+    transition: .5 ease;
+    opacity: 0;
+}
+.icon-left {
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+.icon-right {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

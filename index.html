@@ -84,7 +84,16 @@
             <div class='container'>
                 <h2>Lorem ipsum dolor sit amet</h1>
                 <p>consectetur adipiscing elit. Maecenas facilisis ligula non ornare vehicula.</p>
-                <div class='img-2'></div>
+                <div class='img-2 slider'>
+                    <div class='slider-box'>
+                        <img class='slider-item fade' src='assets/images/img-01.jpg'>
+                        <img class='slider-item fade' src='assets/images/img-02.jpg'>
+                        <img class='slider-item fade' src='assets/images/img-03.jpg'>
+                    </div>
+                    <div class='icon-left' onclick='changeSlide(0)'></div>
+                    <div class='icon-right' onclick='changeSlide(1)'></div>
+                </div>
+                
             </div>
         </section>
         <section class='reviews container'>
@@ -185,5 +194,6 @@
         <footer class='footer bg-style-second'>
             <small>Copyright 2013-2014 @andreyyan, All right reserved.</small>
         </footer>
+        <script src='assets/js/script.js'></script>
     </body>
 </html>
